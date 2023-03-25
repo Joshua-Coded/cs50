@@ -136,6 +136,7 @@ float GetFloat(void)
     string line;
     float data;
     char badc;
+    int f;
     
     // try to get a float from user
     while (true)
@@ -175,6 +176,7 @@ int GetInt(void)
     string line;
     int data;
     char badc;
+    int n;
     
     // try to get an int from user
     while (true)
@@ -214,6 +216,7 @@ long long GetLongLong(void)
     string line;
     long long data;
     char badc;
+    int n;
     
     // try to get a long long from user
     while (true)
