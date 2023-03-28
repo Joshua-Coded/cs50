@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(void)
+{
+  
+  // get height when input is not higher 8 but between 1 and 8.
+
+  int h;
+
+  do
+    {
+      h = puts("Height: ");
+      scanf("%i", &h);
+    }
+  while (h < 1 || h > 8);
+
+
+  // printing the pyramid
+
+  for (int i = 0; i < h; i++)
+    {
+      for(int j = 0; j < h; j++)
+	{
+	  if(j < h - i - 1)
+	    {
+	      printf(" ");
+	    }
+	  else
+	    {
+	      printf("#");
+	    }
+	}
+    
+  printf("\n");
+    }
+  
+}
