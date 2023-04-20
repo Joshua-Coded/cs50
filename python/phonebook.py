@@ -1,9 +1,10 @@
-people = {
-    "Carter": "+1-234-4343-5454",
-    "David": "+1-23234-004"
-}
+import csv
 
-name = input("Name: ")
-if name in people:
-    print(f"Number: {people[name]}")
+with open("phonebook.csv", "a") as file:
+
+    name = input("Name: ")
+    number = input("Number: ")
+
+    writer = csv.writer(file)
+    writer.writerow([name, number])
 
