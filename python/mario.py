@@ -1,7 +1,12 @@
-while True:
-    s = int(input("Give me Height: "))
-    if s > 0:
-        break
+def main():
+    height = get_height()
+    for i in range(height):
+        print("#")
 
-for i in range(s):
-    print("#")
+
+def get_height():
+    while True:
+        s = int(input("Give me height: "))
+        return s
+
+main()
