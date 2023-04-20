@@ -6,7 +6,11 @@ def main():
 
 def get_height():
     while True:
-        s = int(input("Give me height: "))
-        return s
+        try:
+            s = int(input("Give me height: "))
+            if s > 0:     
+                return s
+        except ValueError:
+            print("NOt an integer")
 
 main()
