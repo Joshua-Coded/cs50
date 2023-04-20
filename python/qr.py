@@ -1,5 +1,4 @@
 import os
-
 import qrcode
 
 img = qrcode.make("https://youtu.be/xvFZjo5Pg0")
