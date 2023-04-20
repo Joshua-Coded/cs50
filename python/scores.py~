@@ -1,0 +1,5 @@
+scores = int(input("Enter numbers of your choice "))
+
+for i in range(scores):
+    average = sum(scores) / len(scores)
+    print(f"Average: {average}")
