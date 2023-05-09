@@ -1,0 +1,84 @@
+/* Define custom properties */
+:root {
+  --color-primary: #d73953;
+  --color-black : #090909;
+  --color-white : #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+  --font-family-base: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-title: Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+}
+
+/* Set font-size of html element to 62.5% */
+html {
+  font-size: 62.5%;
+}
+
+/* Set font-size of all fonts in the html element to 62.5% of their normal size */
+* {
+  font-size: 1.6rem; /* equivalent to 16px at 100% */
+}
+
+/* Enable smooth scrolling behavior for HTML element */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set foreground color of body to text-color and font-family to font-family-base */
+body {
+  color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+}
+
+/* Set foreground color of all anchor elements to text-color */
+a {
+  color: var(--text-color);
+}
+
+/* Set foreground color of all elements with class visually-hidden to transparent */
+.visually-hidden {
+  display: none;
+}
+
+/* Set foreground color of all elements with class card-category to color-primary */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Set foreground color of all elements with class section-tagline to color-primary */
+.section-tagline {
+  color: var(--color-primary);
+}
+
+/* Set font-size of all section headings to font-family-title */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
+/* Set font sizes for specific sizes */
+.small-text {
+  font-size: var(--font-size-small);
+}
+
+.medium-text {
+  font-size: var(--font-size-medium);
+}
+
+.large-text {
+  font-size: var(--font-size-large);
+}
+
+.x-large-text {
+  font-size: var(--font-size-x-large);
+}
+
+.xx-large-text {
+  font-size: var(--font-size-xx-large);
+}
